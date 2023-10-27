@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Ticket Reservation</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- fontawesome -->
+    <!-- our project just needs Font Awesome Solid + Brands -->
+    <link href="./assets/fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="./assets/fontawesome/css/brands.css" rel="stylesheet">
+    <link href="./assets/fontawesome/css/solid.css" rel="stylesheet">
+    <!-- custom style -->
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+    <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+        <!-- Navbar content -->
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">
+                <i class="fa-solid fa-film fa-xl"></i>
+                Ticket Reservation
+            </a>
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link link-warning active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link-warning" href="sheet.selection.html">Kursi</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link-warning" href="payment.html">Pembayaran</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link-warning" href="account.html">Account</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+ 
+
+        <!-- Account -->
+        <div class="container mt-5 text-white" data-bs-theme="dark">
+            <h2>Create Your Account</h2>
+            <p>Join us for a better movie booking experience.</p>
+            <form>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="firstName" class="form-label">First Name</label>
+                            <input type="text" class="form-control" id="firstName" name="firstName" required>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="lastName" class="form-label">Last Name</label>
+                            <input type="text" class="form-control" id="lastName" name="lastName" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="username" class="form-label">Username</label>
+                    <input type="text" class="form-control" id="username" name="username" required>
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="password" name="password" required>
+                </div>
+                <div class="mb-3">
+                    <label for="phoneNumber" class="form-label">Phone Number</label>
+                    <input type="tel" class="form-control" id="phoneNumber" name="phoneNumber" required>
+                </div>
+                <div class="mb-3">
+                    <label for="address" class="form-label">Address</label>
+                    <textarea class="form-control" id="address" name="address" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Register</button>
+        </div>
+    
+    <!-- footer -->
+    <footer class="py-5 text-white">
+        <div class="container">
+            <p class="mb-1">Ticket Reservation &copy; adalah situs booking ticket nontn film untuk berbagai bioskop</p>
+            <p class="mb-0">anda dapat memesannya secara online maupun offline</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/bootstrap.js"></script>
+</body>
+</html>

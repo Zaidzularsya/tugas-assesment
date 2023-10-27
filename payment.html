@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Ticket Reservation</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- fontawesome -->
+    <!-- our project just needs Font Awesome Solid + Brands -->
+    <link href="./assets/fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="./assets/fontawesome/css/brands.css" rel="stylesheet">
+    <link href="./assets/fontawesome/css/solid.css" rel="stylesheet">
+    <!-- custom style -->
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+    <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+        <!-- Navbar content -->
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">
+                <i class="fa-solid fa-film fa-xl"></i>
+                Ticket Reservation
+            </a>
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link link-warning active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link-warning" href="sheet.selection.html">Kursi</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link-warning" href="payment.html">Pembayaran</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link-warning" href="account.html">Account</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Payment -->
+    
+    <div class="container">
+        <div class="row justify-content-md-center py-5">
+            <div class="col align-self-center">
+                <div class="card mx-auto" data-bs-theme="dark" style="width: 60rem;">
+                    <div class="card-body">
+                        <div class="d-flex">
+                            <div class="flex-grow-1">
+                                <h5 class="card-title">Total</h5>
+                            </div>
+                            <div class=""></div>
+                            <div class="">35,000</div>
+                        </div>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="firstRadio" checked>
+                            <label class="form-check-label" for="firstRadio" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMandiri" aria-expanded="false" aria-controls="collapseMandiri">Mandiri</label>
+                            <div class="collapse py-2" id="collapseMandiri">
+                                <div class="alert alert-warning text-center" role="alert">
+                                    8241002201150001
+                                </div>
+                                <div class="">
+                                    <p class="fw-bolder">Keterangan Cara Bayar</p>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">Pengguna menyelesaikan pesanan hingga muncul kode Bank Mandiri VA.</li>
+                                        <li class="list-group-item">Buka aplikasi Livin by Mandiri atau M-Banking</li>
+                                        <li class="list-group-item">Log in ke M-Banking Mandiri.</li>
+                                        <li class="list-group-item">Pilih Bayar.</li>
+                                        <li class="list-group-item">Klik e-Commerce.</li>
+                                        <li class="list-group-item">Pilih penyedia layanan Shopee Indonesia.</li>
+                                        <li class="list-group-item">Masukkan&nbsp;Virtual Account.&nbsp;</li>
+                                        <li class="list-group-item">Cek kembali informasi&nbsp;tagihan&nbsp;dan username.</li>
+                                        <li class="list-group-item">Masukkan PIN.</li>
+                                        <li class="list-group-item">Klik OK.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="secondRadio">
+                            <label class="form-check-label" for="secondRadio" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBCA" aria-expanded="false" aria-controls="collapseBCA">Bank Centra Asia (BCA)</label>
+                            <div class="collapse py-2" id="collapseBCA">
+                                <div class="alert alert-warning text-center" role="alert">
+                                    8241002201150001
+                                </div>
+                                <div class="">
+                                    <p class="fw-bolder">Keterangan Cara Bayar</p>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">Pengguna menyelesaikan pesanan hingga muncul kode Bank Mandiri VA.</li>
+                                        <li class="list-group-item">Buka aplikasi Livin by Mandiri atau M-Banking</li>
+                                        <li class="list-group-item">Log in ke M-Banking Mandiri.</li>
+                                        <li class="list-group-item">Pilih Bayar.</li>
+                                        <li class="list-group-item">Klik e-Commerce.</li>
+                                        <li class="list-group-item">Pilih penyedia layanan Shopee Indonesia.</li>
+                                        <li class="list-group-item">Masukkan&nbsp;Virtual Account.&nbsp;</li>
+                                        <li class="list-group-item">Cek kembali informasi&nbsp;tagihan&nbsp;dan username.</li>
+                                        <li class="list-group-item">Masukkan PIN.</li>
+                                        <li class="list-group-item">Klik OK.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="thirdRadio">
+                            <label class="form-check-label" for="thirdRadio" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBRI" aria-expanded="false" aria-controls="collapseBRI">Bank Rakyat Indonesia (BRI)</label>
+                            <div class="collapse py-2" id="collapseBRI">
+                                <div class="alert alert-warning text-center" role="alert">
+                                    8241002201150001
+                                </div>
+                                <div class="">
+                                    <p class="fw-bolder">Keterangan Cara Bayar</p>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">Pengguna menyelesaikan pesanan hingga muncul kode Bank Mandiri VA.</li>
+                                        <li class="list-group-item">Buka aplikasi Livin by Mandiri atau M-Banking</li>
+                                        <li class="list-group-item">Log in ke M-Banking Mandiri.</li>
+                                        <li class="list-group-item">Pilih Bayar.</li>
+                                        <li class="list-group-item">Klik e-Commerce.</li>
+                                        <li class="list-group-item">Pilih penyedia layanan Shopee Indonesia.</li>
+                                        <li class="list-group-item">Masukkan&nbsp;Virtual Account.&nbsp;</li>
+                                        <li class="list-group-item">Cek kembali informasi&nbsp;tagihan&nbsp;dan username.</li>
+                                        <li class="list-group-item">Masukkan PIN.</li>
+                                        <li class="list-group-item">Klik OK.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="card-body">
+                        <button type="button" class="btn btn-secondary">Batal</button>
+                        <button type="button" class="btn btn-danger">Bayar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="py-5 text-white">
+        <div class="container">
+            <p class="mb-1">Ticket Reservation &copy; adalah situs booking ticket nontn film untuk berbagai bioskop</p>
+            <p class="mb-0">anda dapat memesannya secara online maupun offline</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/bootstrap.js"></script>
+</body>
+</html>

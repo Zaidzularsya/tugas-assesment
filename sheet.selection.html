@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pemilihan Kursi Bioskop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .screen {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            margin: 20px 0;
+        }
+
+        .row {
+            display: flex;
+            justify-content: center;
+        }
+
+        .column {
+            flex: 1;
+        }
+
+        .seat {
+            width: 40px;
+            height: 40px;
+            margin: 5px;
+            background-color: #B4B4B4;
+            border: 2px solid #fff;
+            cursor: pointer;
+        }
+
+        .seat.selected {
+            background-color: #FF5733;
+            border: 2px solid #fff;
+        }
+
+        ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+        }
+
+        li {
+        float: left;
+        }
+
+        li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+        background-color: #111;
+        }
+
+        .active {
+        background-color: #ffcd37;
+        }
+        
+    </style>
+    <!-- fontawesome -->
+    <link href="./assets/fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="./assets/fontawesome/css/brands.css" rel="stylesheet">
+    <link href="./assets/fontawesome/css/solid.css" rel="stylesheet">
+</head>
+
+<body>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="sheet.selection.html">Kursi</a></li>
+        <li><a href="payment.html">Pembayaran</a></li>
+        <li><a href="account.html">Account</a></li>
+        <li style="float:right"><a class="active" href="#about">
+            <i class="fa-solid fa-film fa-xl"></i>
+            Ticket Reservation
+        </a></li>
+    </ul>
+    <div class="container">
+        <h1>Pilih Kursi Anda</h1>
+        <div class="screen">Layar Bioskop</div>
+        <div class="row">
+            <div class="column">
+                <div class="row">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                </div>
+                <div class="row">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="row">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                </div>
+                <div class="row">
+                    <div class="seat"></div>
+                    <div class "seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="row">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                </div>
+                <div class="row">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const seats = document.querySelectorAll('.seat');
+
+        seats.forEach((seat) => {
+            seat.addEventListener('click', () => {
+                seat.classList.toggle('selected');
+            });
+        });
+    </script>
+</body>
+
+</html>
